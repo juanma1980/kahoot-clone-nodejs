@@ -1,4 +1,4 @@
-Source: llihoot
+Source: llixhoot
 Section: admin
 Priority: optional
 Maintainer: Equipo LliureX <lliurex@gva.es>
@@ -7,8 +7,8 @@ Build-Depends: llxsrchelper,debhelper (>= 7.0)
 Standards-Version: 3.9.5
 Homepage: https://github.com/ethanbrimhall/kahoot-clone-nodejs
 
-Package: llihoot
+Package: llixhoot
 Architecture: all
 Depends: mongodb, nodejs
-Description: Clone of kahoot.it using nodejs
+Description: Fork of clone of kahoot.it using nodejs
 
