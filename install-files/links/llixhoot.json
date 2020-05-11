@@ -1,0 +1,16 @@
+{
+    "linkid":"llixhoot",
+    "link":"http://llixhoot",
+    "icon":"llixhoot.png",
+    "fonticon":"icon-headphones",
+    "name": {
+        "default":"Llixhoot: Kahoot like app",
+        "valencia":"Llixhoot: Aplicaciò tipus kahoot",
+        "es":"Lliuxhoot: Aplicación tipo kahoot"
+    },
+    "description": {
+        "default":"Llixhoot: Kahoot like app",
+        "valencia":"Llixhoot: Aplicaciò tipus kahoot",
+        "es":"Lliuxhoot: Aplicación tipo kahoot"
+    }
+}
