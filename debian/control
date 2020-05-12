@@ -9,6 +9,10 @@ Homepage: https://github.com/ethanbrimhall/kahoot-clone-nodejs
 
 Package: llixhoot
 Architecture: all
-Depends: mongodb, nodejs
+Depends: mongodb, nodejs, llixhoot-data
 Description: Fork of clone of kahoot.it using nodejs
 
+Package: llixhoot-data
+Architecture: all
+Depends: dnsmasq,n4d,apache2
+Description: Fork of clone of kahoot.it using nodejs
