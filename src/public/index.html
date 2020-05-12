@@ -1,46 +1,14 @@
 <!DOCTYPE html>
 <html>
+	<script src="js/i18n/i18n.js"></script>
+	<script>locale=get_i18n("index");</script>
     <head>
-        <title>Join | KahootClone</title>
+		<script>document.write("<title>"+locale.pagename+"</title>")</script>
         <link rel = "stylesheet" href = "css/index.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-		<script>
-			i18n={
-				en:
-					{ "title": "Join a Game",
-						"namelabel": "Display Name",
-						"pinlabel": "Game Pin",
-						"joinButton": "Join",
-						"host": "Click here to host a LlixHoot!"
-					},
-				es:
-					{ "title": "Unirse a una partida",
-						"namelabel": "Alias",
-						"pinlabel": "Pin del juego",
-						"joinButton": "Jugar",
-						"host": "¡Pulsa aquí para crear un LlixHoot!"
-					},
-				ca:
-					{ "title": "Unirse a una partida",
-						"namelabel": "Alies",
-						"pinlabel": "Pin del joc",
-						"joinButton": "Jugar",
-						"host": "Prem ací per a crear un LlixHoot!"
-					}
-				}
-			console.log(navigator.language);
-			if (navigator.language.startsWith("es"))
-			{
-				locale=i18n.es;
-			} else if (navigator.language.startsWith("ca")) {
-				locale=i18n.ca;
-			} else {
-				locale=i18n.en;
-			}
-		</script>
 					
         <h1 id = "title">Join a Game</h1>
         <form action="/player/">
@@ -65,7 +33,6 @@
         <br/>
         <center><a href = "/create/" id = "host">Click here to host a Kahoot!</a></center>
 		<script>
-			
 			document.getElementById("title").innerHTML = locale.title;
 			document.getElementById("joinButton").innerHTML = locale.joinButton;
 			document.getElementById("host").innerHTML = locale.host;

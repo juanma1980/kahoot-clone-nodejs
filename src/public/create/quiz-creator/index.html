@@ -1,54 +1,59 @@
 <!DOCTYPE html>
 <html>
+	<script src="../../js/i18n/i18n.js"></script>
+	<script>locale=get_i18n("quiz_new");</script>
     <head>
-        <title>Creator | KahootClone</title>
+		<script>document.write("<title>"+locale.pagename+"</title>")</script>
         <link rel = "stylesheet" href = "../../css/quizCreator.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     </head>
     <body onload = "setBGColor()">
-        <h1 id = "title">Kahoot Quiz Creator Studio</h1>
+        <h1 id = "title"><script>document.write("<title>"+locale.title+"</title>")</script></h1>
+			
         
         <div class="form-field">
-            <label id = "quizTitle">Quiz Title</label>
+            <label id = "quizTitle">
+				<script>document.write(locale.quizTitle);</script>
+			</label>
             <input id = "name" type = "text" name="name" autofocus/>
         </div>
         <br>
         <br>
         <div id = "allQuestions">
             <div id="question-field">
-                <label>Question 1: </label>
+                <label><script>document.write(locale.q1)</script></label>
                 <input class = "question" id = "q1" type = "text" autofocus/>
                 <br>
                 <br>
-                <label>Answer 1: </label>
+                <label><script>document.write(locale.a1)</script></label>
                 <input id = "1a1" type = "text" autofocus/>
-                <label>Answer 2: </label>
+                <label><script>document.write(locale.a2)</script></label>
                 <input id = "1a2" type = "text" autofocus/>
                 <br>
                 <br>
-                <label>Answer 3: </label>
+                <label><script>document.write(locale.a3)</script></label>
                 <input id = "1a3"  type = "text"autofocus/>
-                <label>Answer 4: </label>
+                <label><script>document.write(locale.a4)</script></label>
                 <input id = "1a4"  type = "text" autofocus/>
                 <br>
                 <br>
-                <label>Correct Answer (1-4) :</label>
+                <label><script>document.write(locale.correct1)</script></label>
                 <input class = "correct" id = "correct1"  type = "number" autofocus/>
             </div>
         </div>
         <br>
-        <button onclick = "addQuestion()">Add another question</button>
+        <button onclick = "addQuestion()"><script>document.write(locale.another)</script></button>
         
         <br>
         <br>
         
         <div class="form-field">
-            <button onclick = "updateDatabase()">Create Quiz</button>
+            <button onclick = "updateDatabase()"><script>document.write(locale.create)</script></button>
         </div>
         
         <br>
         
-        <button onclick = 'cancelQuiz()'>Cancel quiz and return to quiz selection</button>
+        <button onclick = 'cancelQuiz()'><script>document.write(locale.cancel)</script></button>
         
         <script src = "../../socket.io/socket.io.js"></script>
         <script src = "../../js/quizCreator.js"></script>
