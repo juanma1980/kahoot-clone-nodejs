@@ -7,15 +7,54 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+		<script>
+			i18n={
+				en:
+					{ "title": "Join a Game",
+						"namelabel": "Display Name",
+						"pinlabel": "Game Pin",
+						"joinButton": "Join",
+						"host": "Click here to host a LlixHoot!"
+					},
+				es:
+					{ "title": "Unirse a una partida",
+						"namelabel": "Alias",
+						"pinlabel": "Pin del juego",
+						"joinButton": "Jugar",
+						"host": "¡Pulsa aquí para crear un LlixHoot!"
+					},
+				ca:
+					{ "title": "Unirse a una partida",
+						"namelabel": "Alies",
+						"pinlabel": "Pin del joc",
+						"joinButton": "Jogar",
+						"host": "¡Pulsa ací per a crear un LlixHoot!"
+					}
+				}
+			console.log(navigator.language);
+			if (navigator.language.startsWith("es"))
+			{
+				locale=i18n.es;
+			} else if (navigator.language.startsWith("ca")) {
+				locale=i18n.ca;
+			} else {
+				locale=i18n.en;
+			}
+		</script>
+					
         <h1 id = "title">Join a Game</h1>
         <form action="/player/">
                 <div class="form-field">
-                    <label id = "label">Display Name</label>
+                    <label id = "label">
+						<script>document.write(locale.namelabel);</script>
+					</label>
                     <input id = "name" type = "text" name="name" autofocus/>
                 </div>
                 <br>
                 <div class="form-field">
-                    <label id = "label">Game Pin</label>
+                    <label id = "label">
+						<script>document.write(locale.pinlabel);</script>
+					</label>
                     <input id = "pin" type="number" name="pin"/>
                 </div>
                 <br>
@@ -25,5 +64,11 @@
         </form>
         <br/>
         <center><a href = "/create/" id = "host">Click here to host a Kahoot!</a></center>
+		<script>
+			
+			document.getElementById("title").innerHTML = locale.title;
+			document.getElementById("joinButton").innerHTML = locale.joinButton;
+			document.getElementById("host").innerHTML = locale.host;
+		</script>
     </body>
 </html>
