@@ -1,0 +1,17 @@
+[Unit]
+Description=Starts llixhooot server
+After=apache2.service
+Requires=apache2.service
+
+[Service]
+Type=simple
+ExecStart=nodejs /usr/share/llixhoot/server/server.js
+Restart=always
+RestartSec=2
+RestartPreventExitStatus=0
+StartLimitInterval=200
+StartLimitBurst=9
+
+[Install]
+WantedBy=multi-user.target
+Alias=llixhoot-server.service
