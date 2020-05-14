@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
+	<script src="js/i18n/i18n.js"></script>
     <head>
         <title>Join | KahootClone</title>
         <link rel = "stylesheet" href = "css/index.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
+    <body onload="i18n('index')">
         <h1 id = "title">Join a Game</h1>
         <form action="/player/">
                 <div class="form-field">
@@ -26,4 +27,5 @@
         <br/>
         <center><a href = "/create/" id = "host">Click here to host a Kahoot!</a></center>
     </body>
+
 </html>
