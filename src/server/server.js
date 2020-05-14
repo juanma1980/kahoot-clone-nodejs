@@ -104,7 +104,9 @@ io.on('connection', (socket) => {
                         a3: answer3,
                         a4: answer4,
                         correct: correctAnswer,
-                        playersInGame: playerData.length
+                        playersInGame: playerData.length,
+						currentQuestion:game.gameData.question,
+						questionsInGame:res[0].questions.length
                     });
                     db.close();
                 });
@@ -340,7 +342,9 @@ io.on('connection', (socket) => {
                             a3: answer3,
                             a4: answer4,
                             correct: correctAnswer,
-                            playersInGame: playerData.length
+                            playersInGame: playerData.length,
+						currentQuestion:game.gameData.question,
+						questionsInGame:res[0].questions.length
                         });
                         db.close();
                     }else{
