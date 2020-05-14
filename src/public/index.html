@@ -1,28 +1,22 @@
 <!DOCTYPE html>
 <html>
 	<script src="js/i18n/i18n.js"></script>
-	<script>locale=get_i18n("index");</script>
     <head>
-		<script>document.write("<title>"+locale.pagename+"</title>")</script>
+        <title>Join | KahootClone</title>
         <link rel = "stylesheet" href = "css/index.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
-    <body>
-					
+    <body onload="i18n('index')">
         <h1 id = "title">Join a Game</h1>
         <form action="/player/">
                 <div class="form-field">
-                    <label id = "label">
-						<script>document.write(locale.namelabel);</script>
-					</label>
+                    <label id = "label">Display Name</label>
                     <input id = "name" type = "text" name="name" autofocus/>
                 </div>
                 <br>
                 <div class="form-field">
-                    <label id = "label">
-						<script>document.write(locale.pinlabel);</script>
-					</label>
+                    <label id = "label">Game Pin</label>
                     <input id = "pin" type="number" name="pin"/>
                 </div>
                 <br>
@@ -32,10 +26,6 @@
         </form>
         <br/>
         <center><a href = "/create/" id = "host">Click here to host a Kahoot!</a></center>
-		<script>
-			document.getElementById("title").innerHTML = locale.title;
-			document.getElementById("joinButton").innerHTML = locale.joinButton;
-			document.getElementById("host").innerHTML = locale.host;
-		</script>
     </body>
+
 </html>

@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<script src="../../js/i18n/i18n.js"></script>
-	<script>var locale=get_i18n("game");</script>
     <head>
-		<script>document.write("<title>"+locale.pagename+"</title>")</script>
+        <title>Game | KahootClone</title>
         <link rel = "stylesheet" href = "../../css/hostGameView.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Tajawal" rel="stylesheet">
     </head>
-    <body>
-        <h4 id = "questionNum">
-			<script>document.write(locale.questionNum);</script>
-		</h4>
-        <h4 id = "playersAnswered"><script>document.write(locale.playersAnswered);</script></h4>
-        <h3 id = "timerText"><script>document.write(locale.timerText);</script><span id = "num"> 20</span></h3>
+    <body onload="i18n('game')">
+        <h4 id = "questionNum">Question 1 / x</h4>
+        <h4 id = "playersAnswered">Players Answered: 0 / x</h4>
+        <h3 id = "timerText">Time Left:<span id = "num"> 20</span></h3>
         
         
         <div class = "square" id = "square1"></div>
@@ -21,17 +18,17 @@
         <div class = "square" id = "square3"></div>
         <div class = "square" id = "square4"></div>
         
-        <h2 id = "question"><script>document.write(locale.question);</script></h2>
-        <h3 id = "answer1"><script>document.write(locale.answer);</script></h3>
+        <h2 id = "question">Question</h2>
+        <h3 id = "answer1">Answer</h3>
         <br>
-        <h3 id = "answer2"><script>document.write(locale.answer);</script></h3>
+        <h3 id = "answer2">Answer</h3>
         <br>
-        <h3 id = "answer3"><script>document.write(locale.answer);</script></h3>
+        <h3 id = "answer3">Answer</h3>
         <br>
-        <h3 id = "answer4"><script>document.write(locale.answer);</script></h3>
+        <h3 id = "answer4">Answer</h3>
         
         <br>
-        <button onclick = "nextQuestion()" id = "nextQButton"><script>document.write(locale.nextQuestion);</script></button>
+        <button onclick = "nextQuestion()" id = "nextQButton">Next Question</button>
         
         <h2 id = "winnerTitle">Top 5 Players</h4>
         <h3 id = "winner1">1.</h3>
