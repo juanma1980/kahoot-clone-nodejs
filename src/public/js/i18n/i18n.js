@@ -37,14 +37,14 @@ function get_i18n(pagename)
 			},
 			"host":
 			{
-				"Host | LlixHoot": "Host | LlixHoot",
+				"Host | KahootClone": "Host | LlixHoot",
 				"Join this Game using the Game Pin: ": "Join this Game using the Game Pin: ",
 				"Cancel Game": "Cancel Game",
 				"Start Game": "Start Game"
 			},
 			"game":
 			{
-				"Game | LlixHoot": "Game | LlixHoot",
+				"Game | KahootClone": "Game | LlixHoot",
 				"Question 1 / x": "Question 1 / x",
 				"Player's answer: 0 / x":"Player's answer: 0 / x",
 				"Time Left:": "Time Left:",
