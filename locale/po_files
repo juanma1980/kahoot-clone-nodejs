@@ -1,0 +1,17 @@
+
+OUTPUT: llixhoot/index/index.pot
+OUTPUT: llixhoot/quiz/quiz.pot
+OUTPUT: llixhoot/quiz_new/quiz_new.pot
+OUTPUT: llixhoot/host/host.pot
+OUTPUT: llixhoot/game/game.pot
+OUTPUT: llixhoot/player/player.pot
+OUTPUT: llixhoot/new_game/new_game.pot
+OUTPUT: llixhoot/node/node.pot
+OUTPUT: llixhoot/index/es_ES.po
+OUTPUT: llixhoot/quiz/es_ES.po
+OUTPUT: llixhoot/quiz_new/es_ES.po
+OUTPUT: llixhoot/host/es_ES.po
+OUTPUT: llixhoot/game/es_ES.po
+OUTPUT: llixhoot/player/es_ES.po
+OUTPUT: llixhoot/new_game/es_ES.po
+OUTPUT: llixhoot/node/es_ES.po
