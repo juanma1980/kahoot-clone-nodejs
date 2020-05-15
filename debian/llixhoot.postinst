@@ -5,7 +5,11 @@ case "$1" in
    configure)
    
 	a2enmod proxy
+	a2ensite llixhood
 	service apache2 restart
+
+	MAGIC_KEY=$(cat /etc/n4d/key)
+	n4d-client -h localhost -k $MAGIC_KEY -m set_internal_dns_entry -c Dnsmasq -a llixhoot
 	service dnsmasq restart
    ;;
 
