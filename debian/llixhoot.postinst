@@ -5,7 +5,7 @@ case "$1" in
    configure)
    
 	a2enmod proxy
-	a2ensite llixhood
+	a2ensite llixhoot
 	service apache2 restart
 
 	MAGIC_KEY=$(cat /etc/n4d/key)
