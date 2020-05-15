@@ -1,0 +1,23 @@
+#!/bin/sh
+
+set -e
+case "$1" in
+   configure)
+   
+	a2enmod proxy
+	service apache2 restart
+	service dnsmasq restart
+   ;;
+
+   abort-upgrade|abort-remove|abort-deconfigure)
+   ;;
+
+   *)
+       exit 1
+   ;;
+esac
+
+#DEBHELPER#
+
+exit 0
+
