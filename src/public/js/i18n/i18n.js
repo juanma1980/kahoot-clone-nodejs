@@ -264,8 +264,8 @@ function get_i18n(pagename)
 		locale=i18n["es"][pagename];
 		node_i18n=i18n["es"]['node'];
 	} else if (navigator.language.startsWith("ca")) {
-		locale=i18n["es"][pagename];
-		node_i18n=i18n["es"]['node'];
+		locale=i18n["ca"][pagename];
+		node_i18n=i18n["ca"]['node'];
 	} else {
 		locale=i18n["en"][pagename];
 		node_i18n=i18n["en"]['node'];
