@@ -1,3 +1,9 @@
+llixhoot (0.991.1) bionic; urgency=medium
+
+  * Added or trues to postinst
+
+ -- Hector Garcia Huerta <hectorgh@gmail.com>  Wed, 24 Jun 2020 19:38:12 +0200
+
 llixhoot (0.991) bionic; urgency=medium
 
   * Forked from kahootClone.
