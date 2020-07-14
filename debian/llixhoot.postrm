@@ -5,7 +5,7 @@ set -e
 
 case "$1" in
     purge|remove)
-		rm /var/www/lliurex-www/links/llixhot.json 2>/dev/null
+		rm /var/www/lliurex-www/links/llixhoot.json 2>/dev/null
     ;;
     upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
 		echo ""
