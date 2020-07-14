@@ -3,7 +3,10 @@
     "link":"http://llixhoot",
     "icon":"llixhoot.png",
     "fonticon":"icon-headphones",
-    "name": {
+	"order": 100,
+	"editable": false,
+	"visibility":true,
+	"name": {
         "default":"Llixhoot: Kahoot like app",
         "valencia":"Llixhoot: Aplicaciò tipus kahoot",
         "es":"Lliuxhoot: Aplicación tipo kahoot"
