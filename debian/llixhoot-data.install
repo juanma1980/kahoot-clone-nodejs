@@ -1,4 +1,4 @@
 install-files/sites-available/* /etc/apache2/sites-available
-install-files/links/* /usr/share/lliurex-www/srv/links
+install-files/links/* /usr/share/lliurex-www/links-available
 install-files/icons/* /usr/share/lliurex-www/srv/icons
 install-files/service/* /lib/systemd/system/
