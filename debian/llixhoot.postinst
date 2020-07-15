@@ -12,7 +12,6 @@ case "$1" in
 	n4d-client -h localhost -k $MAGIC_KEY -m set_internal_dns_entry -c Dnsmasq -a llixhoot || true
 	service dnsmasq restart || true
 	mkdir -p  /var/www/lliurex-www/links/ 2>/dev/null
-	cp /usr/share/lliurex-www/links-available/llixhoot.json /var/www/lliurex-www/links/llixhoot.json
    ;;
 
    abort-upgrade|abort-remove|abort-deconfigure)
