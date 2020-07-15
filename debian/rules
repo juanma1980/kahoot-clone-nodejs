@@ -16,3 +16,7 @@
 #override_dh_install:
 #	marked-man docs/repoman.md > docs/repoman.1
 #	dh_install
+
+override_dh_fixperms:
+	dh_fixperms
+	find debian -name 'llixhoot.json' -exec chown www-data:www-data {} +
