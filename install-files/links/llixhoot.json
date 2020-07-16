@@ -1,7 +1,7 @@
 {
     "linkid":"llixhoot",
     "link":"http://llixhoot",
-    "icon":"llixhoot.png",
+    "icon":"llixhoot.svg",
     "fonticon":"icon-headphones",
 	"order": 100,
 	"editable": false,
