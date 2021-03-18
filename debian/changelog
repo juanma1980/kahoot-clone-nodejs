@@ -1,3 +1,9 @@
+llixhoot (1.0.7) bionic; urgency=medium
+
+  * First focal release
+
+ -- Juanma1980 <juanma1980@gmail.com>  Thu, 18 Mar 2021 08:06:23 +0100
+
 llixhoot (1.0.6) bionic; urgency=medium
 
   * Change redirect from being permanent
