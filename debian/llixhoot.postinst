@@ -8,8 +8,9 @@ case "$1" in
 	a2ensite llixhoot || true
 	service apache2 restart || true
 
-	MAGIC_KEY=$(cat /etc/n4d/key)
-	n4d-client -h localhost -k $MAGIC_KEY -m set_internal_dns_entry -c Dnsmasq -a llixhoot || true
+#	MAGIC_KEY=$(cat /etc/n4d/key)
+#	n4d-client -h localhost -k $MAGIC_KEY -m set_internal_dns_entry -c Dnsmasq -a llixhoot || true
+	n4d-client -a llixhoot set_internal_dns_entry -c Dnsmasq  || true
 	service dnsmasq restart || true
 	mkdir -p  /var/www/lliurex-www/links/ 2>/dev/null
    ;;
