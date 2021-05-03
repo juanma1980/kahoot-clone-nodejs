@@ -4,6 +4,8 @@ set -e
 case "$1" in
    configure)
 	cp -p /usr/share/lliurex-www/links-available/llixhoot.json /var/lib/lliurex-www/links/llixhoot.json
+	echo "Fixing llixhoot dns configuration..."
+	/usr/share/lliurex-jclic-shared/oneshots/fix-dns || true
    ;;
 
    abort-upgrade|abort-remove|abort-deconfigure)

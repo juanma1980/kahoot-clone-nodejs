@@ -10,8 +10,8 @@ case "$1" in
 
 #	MAGIC_KEY=$(cat /etc/n4d/key)
 #	n4d-client -h localhost -k $MAGIC_KEY -m set_internal_dns_entry -c Dnsmasq -a llixhoot || true
-	n4d-client -r -a localhost call DnsmasqManager.set_internal_dns_entry '["llixhoot"]' || true
-	service dnsmasq restart || true
+#	n4d-client -r -a localhost call DnsmasqManager.set_internal_dns_entry '["llixhoot"]' || true
+#	service dnsmasq restart || true
 	mkdir -p  /var/www/lliurex-www/links/ 2>/dev/null
    ;;
 
