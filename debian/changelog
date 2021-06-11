@@ -1,3 +1,9 @@
+llixhoot (1.0.7.2-2lliurex) bionic; urgency=medium
+
+  * Rebuild package (no changes)
+
+ -- Juanma1980 <juanma1980@gmail.com>  Fri, 11 Jun 2021 09:50:20 +0200
+
 llixhoot (1.0.6) bionic; urgency=medium
 
   * Change redirect from being permanent
