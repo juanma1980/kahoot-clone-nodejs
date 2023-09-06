@@ -5,6 +5,7 @@ var params = jQuery.deparam(window.location.search); //Gets the id from url
 var timer;
 
 var time = 20;
+
 //When host connects to server
 socket.on('connect', function() {
     
@@ -23,14 +24,12 @@ socket.on('gameQuestions', function(data){
     document.getElementById('answer3').innerHTML = data.a3;
     document.getElementById('answer4').innerHTML = data.a4;
     var correctAnswer = data.correct;
-	console.log(data);
-    document.getElementById('playersAnswered').innerHTML = _("Players Answered 0 / ") + data.playersInGame;
-    document.getElementById('questionNum').innerHTML = _("Question ") + data.currentQuestion + "/" + data.questionsInGame;
+    document.getElementById('playersAnswered').innerHTML = "Players Answered 0 / " + data.playersInGame;
     updateTimer();
 });
 
 socket.on('updatePlayersAnswered', function(data){
-   document.getElementById('playersAnswered').innerHTML = _("Players Answered ") + data.playersAnswered + " / " + data.playersInGame; 
+   document.getElementById('playersAnswered').innerHTML = "Players Answered " + data.playersAnswered + " / " + data.playersInGame; 
 });
 
 socket.on('questionOver', function(playerData, correct){
@@ -144,7 +143,7 @@ socket.on('GameOver', function(data){
     document.getElementById('answer3').style.display = "none";
     document.getElementById('answer4').style.display = "none";
     document.getElementById('timerText').innerHTML = "";
-    document.getElementById('question').innerHTML = _("GAME OVER");
+    document.getElementById('question').innerHTML = "GAME OVER";
     document.getElementById('playersAnswered').innerHTML = "";
     
     
@@ -171,4 +170,23 @@ socket.on('getTime', function(player){
         time: time
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
